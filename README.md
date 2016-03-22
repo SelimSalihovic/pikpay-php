@@ -23,29 +23,28 @@ Before any request, an instance of Gateway has to be constructed.
 ``` php
 $gateway = new Gateway(getenv('ENDPOINT'), getenv('API_KEY'), getenv('SECRET_KEY'));
 ```
-For each Request, a data array is needed. See the [PikPay Docs](https://ipgtest.pikpay.ba/hr/documentation/direct "PikPay Docs") to see which values need to be included for which type of request.  
-**Note: you do not need to include the 'digest' paramter as it is calculated for you on each request based on the data array**.  
+For each Request, a data array is needed. See the [PikPay Docs](https://ipgtest.pikpay.ba/hr/documentation/direct "PikPay Docs") to see which values need to be included for which request.  **Note: you do not need to include the 'digest' parameter as it is calculated for you on each request based on the data array**.  
 
 Here is an example of a valid data array.
 ``` php
 $data = [
-            'amount'          => 5500,
-            'expiration-date' => 1707,
-            'cvv'             => 286,
-            'pan'             => 5464000000000008,
-            'ip'              => '128.93.108.112',
-            'order-info'      => 'Test Order',
-            'ch-address'      => '1419 Westwood Blvd',
-            'ch-city'         => 'Los Angeles',
-            'ch-country'      => 'USA',
-            'ch-email'        => 'john.doe@gmail.com',
-            'ch-full-name'    => 'John Doe',
-            'ch-phone'        => '636-48018',
-            'ch-zip'          => '90024',
-            'currency'        => 'USD', //EUR, BAM, HRK
-            'order-number'    => 'order-d234djflq0wz',
-            'language'        => 'en',
-        ];
+    'amount'          => 5500,
+    'expiration-date' => 1707,
+    'cvv'             => 286,
+    'pan'             => 5464000000000008,
+    'ip'              => '128.93.108.112',
+    'order-info'      => 'Test Order',
+    'ch-address'      => '1419 Westwood Blvd',
+    'ch-city'         => 'Los Angeles',
+    'ch-country'      => 'USA',
+    'ch-email'        => 'john.doe@gmail.com',
+    'ch-full-name'    => 'John Doe',
+    'ch-phone'        => '636-48018',
+    'ch-zip'          => '90024',
+    'currency'        => 'USD', //EUR, BAM, HRK
+    'order-number'    => 'order-d234djflq0wz',
+    'language'        => 'en',
+];
 ```
 ### Sending an Authorization Request
 ``` php
