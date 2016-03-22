@@ -2,8 +2,6 @@
 
 namespace SelimSalihovic\PikPay\Responses;
 
-use GuzzleHttp\Psr7\Response as HttpResponse;
-
 /**
  * PikPay AuthorizationResponse.
  *

@@ -51,7 +51,7 @@ class Request
 
     protected function setInstallments($params, $installments)
     {
-        if ($installments != null) {
+        if ($installments !== null) {
             $params['number-of-installments'] = $installments;
         }
 
