@@ -17,7 +17,7 @@ $ composer require selimsalihovic/pikpay-php
 ```
 
 ## Usage
-To use the package first grab your credentials from your PikPay account. You will need your **Authenticity Token** and **Key** (which will just have the value of the company name). The **Authenticity Token** and the **Key** are referenced as **API KEY** and **SECRET KEY** in the package. **TEST**
+To use the package first grab your credentials from your PikPay account. You will need your **Authenticity Token** and **Key** (which will just have the value of the company name). The Authenticity Token and the Key are referenced as API KEY and SECRET KEY in the package.
 
 Before any request, an instance of Gateway has to be constructed.
 ``` php
