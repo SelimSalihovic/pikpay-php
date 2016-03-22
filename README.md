@@ -1,12 +1,6 @@
 # pikpay-php
 
-<!-- [![Latest Version on Packagist][ico-version]][link-packagist] -->
-
-<!-- [![Software License][ico-license]](LICENSE.md) -->
 [![Build Status](https://travis-ci.org/SelimSalihovic/pikpay-php.svg?branch=master)](https://travis-ci.org/SelimSalihovic/pikpay-php)
-<!-- [![Coverage Status][ico-scrutinizer]][link-scrutinizer]
-[![Quality Score][ico-code-quality]][link-code-quality]
-[![Total Downloads][ico-downloads]][link-downloads]
 
 ## Install
 
