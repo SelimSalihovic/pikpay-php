@@ -13,9 +13,10 @@ sudo: false
 matrix:
   include:
     - php: 5.5
-      env: 'COMPOSER_FLAGS="--prefer-stable --prefer-lowest"'
+      env: 'COMPOSER_FLAGS="--prefer-stable"'
 
 before_script:
+    composer dump-auto
   - mv example.phpunit.xml.dist phpunit.xml.dist
   - travis_retry composer self-update
   - travis_retry composer update ${COMPOSER_FLAGS} --no-interaction --prefer-source
