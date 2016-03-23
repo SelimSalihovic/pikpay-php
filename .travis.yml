@@ -16,12 +16,13 @@ matrix:
       env: 'COMPOSER_FLAGS="--prefer-stable --prefer-lowest"'
 
 before_script:
+  - mv example.phpunit.xml.dist phpunit.xml.dist
   - travis_retry composer self-update
   - travis_retry composer update ${COMPOSER_FLAGS} --no-interaction --prefer-source
 
 script:
   - vendor/bin/phpcs --standard=psr2 src/
-  - vendor/bin/phpunit
+  - vendor/bin/phpunit tests
 
 after_script:
   - if [[ $TRAVIS_PHP_VERSION != 'hhvm' && $TRAVIS_PHP_VERSION != '7.0' ]]; then php vendor/bin/ocular code-coverage:upload --format=php-clover coverage.clover; fi
