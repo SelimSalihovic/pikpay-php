@@ -1,6 +1,6 @@
 # pikpay-php
 
-[![SensioLabsInsight](https://insight.sensiolabs.com/projects/a2e50041-aa3e-45d0-9647-5024047a6d56/big.png)](https://insight.sensiolabs.com/projects/a2e50041-aa3e-45d0-9647-5024047a6d56)
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/9b6f8918-9c22-48a7-9c78-98e868e5b908/big.png)](https://insight.sensiolabs.com/projects/9b6f8918-9c22-48a7-9c78-98e868e5b908)
 
 [![Build Status](https://travis-ci.org/SelimSalihovic/pikpay-php.svg?branch=master)](https://travis-ci.org/SelimSalihovic/pikpay-php)
 
