@@ -5,6 +5,7 @@
 [![Latest Stable Version](https://img.shields.io/packagist/v/selimsalihovic/pikpay-php.svg?style=flat-square)](https://packagist.org/packages/selimsalihovic/pikpay-php)
 [![Minimum PHP Version](https://img.shields.io/badge/php-%3E%3D%205.3.0-8892BF.svg?style=flat-square)](https://php.net/)
 [![Build Status](https://travis-ci.org/SelimSalihovic/pikpay-php.svg?branch=master)](https://travis-ci.org/SelimSalihovic/pikpay-php)
+[![StyleCI](https://styleci.io/repos/54515838/shield)](https://styleci.io/repos/54515838)
 
 ## Install
 
