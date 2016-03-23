@@ -3,6 +3,7 @@
 [![SensioLabsInsight](https://insight.sensiolabs.com/projects/9b6f8918-9c22-48a7-9c78-98e868e5b908/big.png)](https://insight.sensiolabs.com/projects/9b6f8918-9c22-48a7-9c78-98e868e5b908)
 
 [![Latest Stable Version](https://img.shields.io/packagist/v/selimsalihovic/pikpay-php.svg?style=flat-square)](https://packagist.org/packages/selimsalihovic/pikpay-php)
+[![Minimum PHP Version](https://img.shields.io/badge/php-%3E%3D%205.3.0-8892BF.svg?style=flat-square)](https://php.net/)
 [![Build Status](https://travis-ci.org/SelimSalihovic/pikpay-php.svg?branch=master)](https://travis-ci.org/SelimSalihovic/pikpay-php)
 
 ## Install
@@ -14,13 +15,12 @@ $ composer require selimsalihovic/pikpay-php
 ```
 
 ## Usage
-To use the package first grab your credentials from your PikPay account. You will need your **Authenticity Token** and **Key** (which will just have the value of the company name). The Authenticity Token and the Key are referenced as API KEY and SECRET KEY in the package.
-
+To use the package first grab your credentials from your PikPay account. You will need your **Authenticity Token** (API_KEY) and **Key** (SECRET_KEY).
 Before any request, an instance of Gateway has to be constructed.
 ``` php
 $gateway = new Gateway(getenv('ENDPOINT'), getenv('API_KEY'), getenv('SECRET_KEY'));
 ```
-For each Request, a data array is needed. See the [PikPay Docs](https://ipgtest.pikpay.ba/hr/documentation/direct "PikPay Docs") to see which values need to be included for which request.  **Note: you do not need to include the 'digest' parameter as it is calculated for you on each request based on the data array**.  
+For each Request, a data array is needed. See the [PikPay Docs](https://ipgtest.pikpay.ba/hr/documentation/direct "PikPay Docs") to see which values need to be included for which request.  **Note**: you do not need to include the 'digest' parameter as it is calculated for you on each request based on the data array.  
 
 Here is an example of a valid data array.
 ``` php
