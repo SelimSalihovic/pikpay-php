@@ -20,6 +20,8 @@ Before any request, an instance of Gateway has to be constructed.
 ``` php
 $gateway = new Gateway(getenv('ENDPOINT'), getenv('API_KEY'), getenv('SECRET_KEY'));
 ```
+
+### Input Data
 For each Request, a data array is needed. See the [PikPay Docs](https://ipgtest.pikpay.ba/hr/documentation/direct "PikPay Docs") to see which values need to be included for which request.  **Note**: you do not need to include the 'digest' parameter as it is calculated for you on each request based on the data array.  
 
 Here is an example of a valid data array.
