@@ -22,10 +22,9 @@ class AuthorizationRequest extends Request
     protected $httpRequest;
     protected $response;
 
-    public function __construct(HttpClient $httpClient, Gateway $gateway, array $params, $installments = null)
+    public function __construct(HttpClient $httpClient, Gateway $gateway, array $params)
     {
-        $this->setInstallments($params, $installments);
-        parent::__construct($httpClient, $gateway, 'authorize', $this->params);
+        parent::__construct($httpClient, $gateway, 'authorize', $params);
         $this->uri = '/api';
         $this->httpClient = $httpClient;
         $this->send();

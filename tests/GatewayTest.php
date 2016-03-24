@@ -98,15 +98,6 @@ class GatewayTest extends \PHPUnit_Framework_TestCase
     /**
      * @test
      */
-    public function it_sends_an_authorization_request_with_installments()
-    {
-        $response = $this->gateway->authorizeWithInstallments($this->data, 2);
-        $this->assertTrue($response->isSuccessfull());
-    }
-
-    /**
-     * @test
-     */
     public function it_sends_a_purchase_request_with_installments()
     {
         $response = $this->gateway->purchaseWithInstallments($this->data, 2);

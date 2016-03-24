@@ -34,11 +34,6 @@ class Gateway
         return $this->createRequest(Requests\AuthorizationRequest::class, $params);
     }
 
-    public function authorizeWithInstallments(array $params, $installments = null)
-    {
-        return $this->createRequest(Requests\AuthorizationRequest::class, $params, $installments);
-    }
-
     public function purchase(array $params)
     {
         return $this->createRequest(Requests\PurchaseRequest::class, $params);
