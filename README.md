@@ -84,7 +84,7 @@ $response = $gateway->void($data);
 
 To run the tests be sure to have all the dev dependencies from composer.json installed. 
 ``` bash
-$ cd pikpay-php && mv example.phpunit.xml.dist phpunit.xml.dist
+$ cd pikpay-php && cp example.phpunit.xml.dist phpunit.xml.dist
 $ nano phpunit.xml.dist #update your credentials and save them
 $ vendor/bin/phpunit
 ```
