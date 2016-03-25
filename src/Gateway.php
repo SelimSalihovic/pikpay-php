@@ -14,7 +14,6 @@ use SelimSalihovic\PikPay\Requests;
  */
 class Gateway
 {
-    protected $ssl;
     protected $endpoint;
     protected $httpClient;
     protected $apiKey;
@@ -22,7 +21,6 @@ class Gateway
 
     public function __construct($endpoint, $apiKey, $secretKey)
     {
-        $this->ssl = false;
         $this->endpoint = $endpoint;
         $this->setApiKey($apiKey);
         $this->setSecretKey($secretKey);
