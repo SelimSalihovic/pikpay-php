@@ -25,7 +25,9 @@ We accept contributions via Pull Requests on [Github](https://github.com/selimsa
 ## Running Tests
 
 ``` bash
-$ composer test
+$ cd pikpay-php && cp example.phpunit.xml.dist phpunit.xml.dist
+$ nano phpunit.xml.dist #update your credentials and save them
+$ vendor/bin/phpunit
 ```
 
 
