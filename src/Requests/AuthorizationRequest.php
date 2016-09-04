@@ -4,7 +4,6 @@ namespace SelimSalihovic\PikPay\Requests;
 
 use GuzzleHttp\Client as HttpClient;
 use SelimSalihovic\PikPay\Gateway;
-use SelimSalihovic\PikPay\Requests\Request;
 use SelimSalihovic\PikPay\Responses\AuthorizationResponse;
 
 /**

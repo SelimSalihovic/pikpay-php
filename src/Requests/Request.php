@@ -77,7 +77,7 @@ class Request
     {
         return [
             'Accept'       => 'application/xml',
-            'Content-Type' => 'application/xml; charset=UTF8',
+            'Content-Type' => 'application/xml; charset=UTF8'
         ];
     }
 }

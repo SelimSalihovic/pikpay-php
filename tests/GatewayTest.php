@@ -37,16 +37,6 @@ class GatewayTest extends \PHPUnit_Framework_TestCase
     /**
      * @test
      */
-    public function it_has_matching_params_and_attributes()
-    {
-        $this->assertSame('https://ipgtest.pikpay.ba', $this->gateway->endpoint());
-        $this->assertSame('642161ec90b0f94aa2a4c80d274e432ad4e637c7', $this->gateway->apiKey());
-        $this->assertSame('Monsun', $this->gateway->secretKey());
-    }
-
-    /**
-     * @test
-     */
     public function it_sends_an_authorization_request()
     {
         $response = $this->gateway->authorize($this->data);
